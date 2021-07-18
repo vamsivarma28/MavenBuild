@@ -1,7 +1,8 @@
 node('master') {
   ansiColor('xterm') {
 	  
-	 def mvnHomestage ('Preparation'){mvnHome = tool 'Maven3'}
+	 def mvnHome
+	stage ('Preparation'){mvnHome = tool 'Maven3'}
 	stage ('checkout code'){
 		checkout scm
 	}
