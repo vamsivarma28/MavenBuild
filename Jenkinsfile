@@ -1,6 +1,5 @@
 node('master') {
-  ansiColor('xterm') {
-	  
+  ansiColor('xterm') {  
 	def mvnHome
 	stage ('Preparation'){
 	    mvnHome = tool 'Maven3'
